@@ -5,7 +5,7 @@ let elemnt = document.createElement("news-widget");
 elemnt.setAttribute("cid", document.currentScript.getAttribute("cid"));
 document.body.appendChild(elemnt);
 document.addEventListener("DOMContentLoaded", () => {
-  const myWebComponent = document.querySelector("my-web-component");
+  const myWebComponent = document.querySelector("news-widget");
   myWebComponent.addEventListener("changeEnv", (event) => {
     console.log(event)
     const eventData = event.detail;
