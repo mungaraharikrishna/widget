@@ -6,6 +6,7 @@ elemnt.setAttribute("cid", document.currentScript.getAttribute("cid"));
 // elemnt.setAttribute("change",function(w){
 //     console.log(e)
 // })
+document.body.appendChild(elemnt);
 let btn = document.querySelector("#btn");
 
 btn.addEventListener("change", function (e) {
@@ -14,4 +15,3 @@ btn.addEventListener("change", function (e) {
 
 let clickEvent = new Event("change");
 btn.dispatchEvent(clickEvent);
-document.body.appendChild(elemnt);
