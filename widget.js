@@ -7,11 +7,13 @@ elemnt.setAttribute("cid", document.currentScript.getAttribute("cid"));
 //     console.log(e)
 // })
 document.body.appendChild(elemnt);
-let btn = document.querySelector("#btn");
-
-btn.addEventListener("change", function (e) {
-  alert(e);
-});
-
-let clickEvent = new Event("change");
-btn.dispatchEvent(clickEvent);
+setTimeout(function() {
+    let btn = document.querySelector("#btn");
+    
+    btn.addEventListener("change", function (e) {
+      alert(e);
+    });
+    
+    let clickEvent = new Event("change");
+    btn.dispatchEvent(clickEvent);
+}, 1000)
